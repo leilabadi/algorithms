@@ -1,6 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-using Algorithms.AlgorithmsLibrary.Fibonacci;
+/*using Algorithms.AlgorithmsLibrary.Fibonacci;
 
 Fibonacci fib;
 
@@ -32,4 +32,9 @@ Console.WriteLine("---------------------------");
 for (int i = 0; i < 10; i++)
 {
     Console.WriteLine($"{i}\t{fib.Generate(i)}\t{fib.Counter}");
-}
+}*/
+
+using Algorithms.AlgorithmsLibrary.StringReverse;
+
+Console.WriteLine(StringReverter.RevertRecursive("Hello World!"));
+Console.WriteLine(StringReverter.RevertIterative("Hello World!"));
