@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using Algorithms.Fibonacci;
+
+using Algorithms.AlgorithmsLibrary.Fibonacci;
 
 Fibonacci fib;
 

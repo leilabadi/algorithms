@@ -1,4 +1,4 @@
-﻿namespace Algorithms.Fibonacci;
+﻿namespace Algorithms.AlgorithmsLibrary.Fibonacci;
 
 public class FibonacciCachedRecursive : Fibonacci
 {
