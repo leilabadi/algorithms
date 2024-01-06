@@ -1,6 +1,6 @@
 ﻿namespace Algorithms.AlgorithmsLibrary.Sorting;
 
-public class SelectionSort<T> : SortBase where T : IComparable<T>
+public class SelectionSort<T> : SortBase<T> where T : IComparable<T>
 {
     public T[] Sort(T[] array)
     {
@@ -25,12 +25,5 @@ public class SelectionSort<T> : SortBase where T : IComparable<T>
         }
 
         return array;
-    }
-
-    private void Swap(T[] array, int i, int j)
-    {
-        T temp = array[i];
-        array[i] = array[j];
-        array[j] = temp;
     }
 }
