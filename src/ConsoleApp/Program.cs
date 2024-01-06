@@ -25,14 +25,15 @@ static void SortTest()
 
 static void SortAndPrint(int[] array, SortBase<int> sort)
 {
+    array = array.ToArray();
     string algorithmName = sort.GetType().Name;
-    algorithmName = algorithmName.Substring(0, algorithmName.Length - 2);
+    algorithmName = algorithmName[..^2];
 
     int[] sortedArray = sort.Sort(array);
 
     Console.WriteLine("--------------------------------------------------");
     Console.WriteLine($"Sort: {algorithmName} - Compare Count: {sort.Counter}");
-    Console.WriteLine(ArrayPrinter.Print(array));
+    //Console.WriteLine(ArrayPrinter.Print(array));
     Console.WriteLine(ArrayPrinter.Print(sortedArray));
 }
 
