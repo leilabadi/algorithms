@@ -2,7 +2,7 @@
 
 public class SelectionSort<T> : SortBase<T> where T : IComparable<T>
 {
-    public T[] Sort(T[] array)
+    public override T[] Sort(T[] array)
     {
         for (int i = 0; i < array.Length; i++)
         {
