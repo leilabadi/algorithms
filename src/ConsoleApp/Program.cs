@@ -34,7 +34,19 @@ for (int i = 0; i < 10; i++)
     Console.WriteLine($"{i}\t{fib.Generate(i)}\t{fib.Counter}");
 }*/
 
-using Algorithms.AlgorithmsLibrary.StringReverse;
+/*using Algorithms.AlgorithmsLibrary.StringReverse;
 
 Console.WriteLine(StringReverter.RevertRecursive("Hello World!"));
-Console.WriteLine(StringReverter.RevertIterative("Hello World!"));
+Console.WriteLine(StringReverter.RevertIterative("Hello World!"));*/
+
+using Algorithms.AlgorithmsLibrary.Sorting;
+using Algorithms.ConsoleApp;
+
+int[] array = [99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0];
+Console.WriteLine(ArrayPrinter.Print(array));
+
+BubbleSort<int> bubbleSort = new();
+var sortedArray = bubbleSort.Sort(array);
+Console.WriteLine(ArrayPrinter.Print(sortedArray));
+
+Console.WriteLine($"Compare count: {bubbleSort.Counter}");
