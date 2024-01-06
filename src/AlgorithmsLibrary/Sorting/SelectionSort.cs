@@ -7,14 +7,12 @@ public class SelectionSort<T> : SortBase<T> where T : IComparable<T>
         for (int i = 0; i < array.Length; i++)
         {
             int minIndex = i;
-            T min = array[i];
-            for (int j = i; j < array.Length; j++)
+            for (int j = i + 1; j < array.Length; j++)
             {
                 Counter++;
-                if (array[j].CompareTo(min) < 0)
+                if (array[j].CompareTo(array[minIndex]) < 0)
                 {
                     minIndex = j;
-                    min = array[j];
                 }
             }
 
