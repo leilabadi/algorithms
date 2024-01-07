@@ -6,7 +6,7 @@ public enum SortAlgorithms
     SelectionSort,
     InsertionSort,
     OptimizedInsertionSort,
-    /*MergeSort,
-    QuickSort,
+    MergeSort,
+    /*QuickSort,
     HeapSort*/
 }

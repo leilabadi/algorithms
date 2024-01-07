@@ -10,6 +10,7 @@ public class SortTests : TestBase
     [InlineData(SortAlgorithms.SelectionSort)]
     [InlineData(SortAlgorithms.InsertionSort)]
     [InlineData(SortAlgorithms.OptimizedInsertionSort)]
+    [InlineData(SortAlgorithms.MergeSort)]
     public void Sort_WhenPassingARandomArray_ShouldReturnAnAcsendingOrderedArray(SortAlgorithms algorithm)
     {
         // Arrange
@@ -29,6 +30,7 @@ public class SortTests : TestBase
     [InlineData(SortAlgorithms.SelectionSort)]
     [InlineData(SortAlgorithms.InsertionSort)]
     [InlineData(SortAlgorithms.OptimizedInsertionSort)]
+    [InlineData(SortAlgorithms.MergeSort)]
     public void Sort_WhenPassingARandomAcsendingOrderedArray_ShouldReturnAnAcsendingOrderedArray(SortAlgorithms algorithm)
     {
         // Arrange
@@ -48,6 +50,7 @@ public class SortTests : TestBase
     [InlineData(SortAlgorithms.SelectionSort)]
     [InlineData(SortAlgorithms.InsertionSort)]
     [InlineData(SortAlgorithms.OptimizedInsertionSort)]
+    [InlineData(SortAlgorithms.MergeSort)]
     public void Sort_WhenPassingARandomDescendingOrderedArray_ShouldReturnAnAcsendingOrderedArray(SortAlgorithms algorithm)
     {
         // Arrange
@@ -67,6 +70,7 @@ public class SortTests : TestBase
     [InlineData(SortAlgorithms.SelectionSort)]
     [InlineData(SortAlgorithms.InsertionSort)]
     [InlineData(SortAlgorithms.OptimizedInsertionSort)]
+    [InlineData(SortAlgorithms.MergeSort)]
     public void Sort_WhenPassingAnArrayScenario1_ShouldReturnAnAcsendingOrderedArray(SortAlgorithms algorithm)
     {
         // Arrange
@@ -89,6 +93,7 @@ public class SortTests : TestBase
             SortAlgorithms.SelectionSort => new SelectionSort<int>(),
             SortAlgorithms.InsertionSort => new InsertionSort<int>(),
             SortAlgorithms.OptimizedInsertionSort => new OptimizedInsertionSort<int>(),
+            SortAlgorithms.MergeSort => new MergeSort<int>(),
             _ => throw new ArgumentOutOfRangeException(nameof(algorithm), algorithm, null)
         };
     }

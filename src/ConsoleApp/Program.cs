@@ -4,6 +4,12 @@ using Algorithms.AlgorithmsLibrary.Fibonacci;
 using Algorithms.AlgorithmsLibrary.Sorting;
 using Algorithms.ConsoleApp;
 
+
+/*int[] array = [50, 20, 40, 30, 70];
+var sort = new MergeSort<int>();
+int[] sortedArray = sort.Sort(array);
+Console.WriteLine(ArrayPrinter.Print(sortedArray));*/
+
 SortTest();
 
 static void SortTest()
@@ -15,12 +21,14 @@ static void SortTest()
     SortAndPrint(array, new SelectionSort<int>());
     SortAndPrint(array, new InsertionSort<int>());
     SortAndPrint(array, new OptimizedInsertionSort<int>());
+    SortAndPrint(array, new MergeSort<int>());
 
     array = [0, 1, 2, 4, 5, 6, 44, 63, 87, 99, 283];
     SortAndPrint(array, new BubbleSort<int>());
     SortAndPrint(array, new SelectionSort<int>());
     SortAndPrint(array, new InsertionSort<int>());
     SortAndPrint(array, new OptimizedInsertionSort<int>());
+    SortAndPrint(array, new MergeSort<int>());
 }
 
 static void SortAndPrint(int[] array, SortBase<int> sort)
